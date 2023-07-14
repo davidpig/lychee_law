@@ -30,7 +30,7 @@
 
 
 ## 语言模型 🤖
-* [Law-GLM-10B](https://huggingface.co/law-llm/law-glm-10b): 基于 [GLM-10B](https://github.com/amitmerchant1990/markdownify-web) 模型, 在 30GB 中文法律数据上进行指令微调.
+* [Law-GLM-10B](https://huggingface.co/law-llm/law-glm-10b): 基于 [GLM-10B](https://github.com/THUDM/GLM) 模型, 在 30GB 中文法律数据上进行指令微调.
 * 即将推出更强大的法律语言模型, 敬请期待!
 
 ## 使用方式 🛠️
@@ -39,7 +39,7 @@
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
-hf_model = "law-glm-10b"
+hf_model = "law-llm/law-glm-10b"
 max_question_length = 64
 max_generation_length = 490
 
