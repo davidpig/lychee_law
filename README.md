@@ -37,6 +37,7 @@
 
 我们推出的语言模型支持 HuggingFace🤗
 ```python
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 hf_model = "law-glm-10b"
 max_question_length = 64
